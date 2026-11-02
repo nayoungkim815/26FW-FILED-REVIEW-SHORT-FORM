@@ -235,6 +235,18 @@ pre.caption{background:var(--surface);border-radius:16px;padding:20px;margin:16p
 .spec-copy pre{margin:0 0 12px;font:inherit;font-size:14px;white-space:pre-wrap;line-height:1.7;overflow-wrap:anywhere}
 .spec-copy .btn{padding:8px 16px;font-size:14px}
 @media (max-width:760px){.product{grid-template-columns:1fr;padding:20px}}
+/* creator assets */
+html[lang="ko"] h1,html[lang="ko"] h2,html[lang="ko"] h3,html[lang="ko"] h4,html[lang="ko"] p,html[lang="ko"] li{word-break:keep-all;overflow-wrap:anywhere}
+.assets{padding:32px clamp(20px,4vw,36px);border-radius:24px;border:1.5px solid var(--accent);background:linear-gradient(135deg,var(--accent-soft),var(--bg) 70%)}
+.assets h2{margin:10px 0 8px}
+.assets-badge{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.04em;color:#fff;background:var(--accent);border-radius:6px;padding:3px 9px}
+.assets-lead{margin:0 0 16px;color:var(--muted);max-width:640px}
+.assets-rules{margin:0 0 22px;padding:14px 18px 14px 34px;border-radius:14px;background:var(--bg);border:1px solid var(--line);font-size:15px}
+.assets-rules li{margin:4px 0}
+.assets-rules strong{color:var(--danger)}
+.assets-btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px}
+.assets-note{margin:10px 0 0;font-size:13px;color:var(--muted)}
+@media (max-width:640px){.assets{padding:24px 20px;border-radius:18px}.assets-btn{display:flex;justify-content:center;width:100%}}
 /* product selector */
 .catalog-btn{display:inline-flex;align-items:center;gap:8px;margin-top:20px;padding:13px 22px}
 @media (max-width:640px){.catalog-btn{display:flex;justify-content:center;width:100%}}
@@ -441,6 +453,7 @@ section > h2:not(:has(+ .lead)){margin-bottom:24px}
     <span class="brand">URBANSIDE</span>
     <div class="nav-links">
       <a href="#product"><span class="ja">対象アイテム</span><span class="ko">대상 제품</span></a>
+      <a href="#assets"><span class="ja">高画質素材</span><span class="ko">고화질 소스</span></a>
       <a href="#spec"><span class="ja">基本仕様</span><span class="ko">기본 스펙</span></a>
       <a href="#tabs" data-select="tab-1"><span class="ja">テーマ1</span><span class="ko">테마 1</span></a>
       <a href="#tabs" data-select="tab-2"><span class="ja">テーマ2</span><span class="ko">테마 2</span></a>
@@ -568,6 +581,21 @@ section > h2:not(:has(+ .lead)){margin-bottom:24px}
       </div>
     </div>
     <a class="btn catalog-btn" href="https://nayoungkim815.github.io/URBANSIDE-26FW-APPAREL/" target="_blank" rel="noopener"><span class="ja">26FW 製品紹介資料を見る</span><span class="ko">26FW 제품소개서 보기</span><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 3h7v7M13 3 4 12"/></svg></a>
+  </section>
+
+  <!-- ASSETS -->
+  <section id="assets">
+    <div class="assets">
+      <span class="assets-badge"><span class="ja">クリエイター限定</span><span class="ko">크리에이터 한정</span></span>
+      <h2><span class="ja">クリエイター専用 高画質素材</span><span class="ko">크리에이터 전용 활용 고화질 소스</span></h2>
+      <p class="assets-lead"><span class="ja">クリエイターの皆さまに限定して共有している高画質素材です。コンテンツ制作の際にご活用ください。</span><span class="ko">크리에이터에게만 한정 공유되는 고화질 소스예요. 콘텐츠 제작 시 자유롭게 활용해 주세요.</span></p>
+      <ul class="assets-rules">
+        <li><span class="ja">本素材はクリエイター限定で共有しています。<strong>第三者への共有・転送など、外部への流出は禁止</strong>です。</span><span class="ko">크리에이터 한정으로 공유되는 자료로, <strong>제3자 공유·전달 등 외부 유출은 금지</strong>예요.</span></li>
+        <li><span class="ja">URBANSIDEのコンテンツ制作以外の目的では使用しないでください。</span><span class="ko">어반사이드 콘텐츠 제작 목적으로만 사용해 주세요.</span></li>
+      </ul>
+      <a class="btn assets-btn" href="https://drive.google.com/drive/folders/1tEd_nA_8C6adO7-ajKtvyPPL9UTqrKiU" target="_blank" rel="noopener"><span class="ja">素材フォルダを開く</span><span class="ko">소스 폴더 열기</span><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 3h7v7M13 3 4 12"/></svg></a>
+      <p class="assets-note"><span class="ja">Google ドライブが新しいタブで開きます。</span><span class="ko">Google 드라이브가 새 탭에서 열려요.</span></p>
+    </div>
   </section>
 
   <!-- SPEC -->
